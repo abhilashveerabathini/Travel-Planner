@@ -34,3 +34,5 @@ india-travel-planner/
 ├─ style.css # Styling and responsive layout
 ├─ script.js # JavaScript logic for suggestions and modal
 └─ README.md # Project description
+## Click the Below Link to Access the website
+https://68d58717ca11db04ef65c6ac--brilliant-starlight-ab502d.netlify.app/
