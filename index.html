@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>India Travel Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>✈️ India Travel Planner</h1>
+    <p>Select season, companions, and budget — get travel suggestions across India!</p>
+  </header>
+
+  <main class="main">
+    <section class="controls">
+      <form id="plannerForm">
+        <div class="row">
+          <label for="season">Choose Season</label>
+          <select id="season">
+            <option>Winter</option>
+            <option>Summer</option>
+            <option>Monsoon</option>
+            <option>Spring</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="companions">Traveling With</label>
+          <select id="companions">
+            <option>Solo</option>
+            <option>Friends</option>
+            <option>Family</option>
+            <option>Partner</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="budget">Budget</label>
+          <select id="budget">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>Luxury</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <button type="submit" class="btn-primary">Get Suggestions</button>
+          <button type="button" id="randomBtn" class="btn-alt">Surprise Me</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="result" class="result">
+      <!-- Suggestion cards inserted here by script -->
+    </section>
+  </main>
+
+  <!-- Modal for details -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="Close">X</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <small>Suggestions are based on built-in India destinations data. Goa sample includes packing list & sample budget.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
